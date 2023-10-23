@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    direction: rtl;
+    background-color: #eee;
+    max-height: 100vw;
+    font-size: 1rem;
+}
+
+header {
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+.alert {
+    padding: 1rem;
+    background: green;
+    color: #eee;
+    width: fit-content;
+    border-right: .5rem solid black;
+    transition: .3s;
+    border-radius: .5rem;
+    transform: translateX(100%);
+}
+.alerton {
+    transform: translateX(0);
+
+}
+h2 {
+     text-align: center;
+     margin: 20px 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.manager-container {
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 2rem 0;
+}
+.manager-container .left,  .manager-container .right {
+    flex: 30%;
+}
+
+.manager-container .left div:last-of-type,  .manager-container .right div:last-of-type {
+    margin-bottom: 0;
+}
+@media (max-width:700px) {
+    .manager-container {
+        width: 90%;
+       flex-direction: column;
+       gap: 0;
+    }
+}
+.manager {
+    display: flex ;
+    gap: 1rem;
+    margin: 15px 0;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+ input[type="text"],  input[type="date"] {
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 190px;
+}
+.manager label {
+    margin-left: 10px;
+}
+.data-container {
+    margin: 2rem 0 0;
+}
+
+.data-container .employee {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.data{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+}
+
+@media (max-width:959px) {
+    .data-container .employee {
+        width: 90%;
+       flex-direction: column;
+        /* gap: 3rem; */
+
+    }
+    .data-container .employee .data:last-of-type {
+      margin-bottom: 1rem;
+    }
+}
+.employee .data label {
+    width: 7rem;
+}
+/* .employee .data input {
+    flex: 1;
+} */
+.data input {
+    border-width: 2.6px;
+}
+.data input:focus {
+    border-color: blue;
+}
+.controls {
+    margin:  auto;
+    padding: 2rem 0 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.controls button {
+    margin: auto;
+    background: transparent;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    transition: .3s;
+}
+.controls button:hover {
+    scale: 1.2;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.controls button:first-of-type {
+    background-color: #2fab99;
+}
+
+.controls button:last-of-type {
+    background-color: orangered;
+}
+.data.special:not(:last-of-type) {
+    flex: 30%;
+}
+.data.special #fares {
+    height: 1rem;
+}
+select {
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.data-conatinerr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.data-conatinerr .dataa {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .data-conatinerr .dataa select {
+    flex: .25;
+} */
+.data-conatinerr .dataa div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.data-conatinerr .dataa div input {
+    flex: 1;
+}
+.education {
+    width: 30%;
+    margin: auto;
+}
+@media (max-width:500px) {
+    .education {
+        width: 70%;
+        
+    }
+}
+.edu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* .edu-container div .top,  .edu-container div .down {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+} */
+.edu-container  .top div,  .edu-container  .down div {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.education h4 {
+    text-align: center;
+    margin: 1rem 0;
+}
+.count-container  {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.count-container div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+@media (max-width:400px) {
+    .count-container div {
+        flex: 1;
+        justify-content: space-between;
+    }
+}
+
+.count-container div p, .lastdata label {
+    width: 8rem;
+    text-align: center;
+}
+ input[type="number"] {
+    width: 3rem;
+}
+.studnets .top, .studnets .tdown {
+    margin: 2rem 0;
+}
+.studnets h4 {
+    margin-bottom: 1rem;
+}
+.lastdata {
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.lastdata input{
+    border-width: 1px;
+}
+@media (max-width:400px) {
+    .lastdata div {
+        flex: 1;
+        justify-content: space-between;
+    }
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section label {
+    color: red;
+}
+.data div p {
+    width: 180px;
+    color: red;
+}
+.manager div p {
+    color: red;
+    width: 180px;
+}
+select option {
+    font-weight: normal;
+}

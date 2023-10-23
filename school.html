@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainifo.css">
+    <title>التعليمات التفصيلية</title>
+</head>
+<body>
+    <header></header>
+    <h2>التعليمات التفصيلية</h2>
+    <div class="alert"></div> 
+    <form id="saveSchool">
+        <div class="container">
+            <div class="data-conatinerr">
+                <div class="dataa">
+                    <select required name="SchoolGender" id="SchoolGender">
+                        <option value="">اختر</option>
+                        <option value="بنات">بنات</option>
+                        <option value="بنين">بنين</option>
+                    </select>
+                    <div>
+                        <label for="SchoolName">اسم المدرسة</label>
+                        <input required id="SchoolName" type="text">
+                    </div>
+                    <select required name="SchoolType" id="SchoolType">
+                        <option value="">اختر</option>
+                        <option  value="بنات">مستأجر</option>
+                        <option value="بنين">حكومي</option>
+                    </select>
+                </div>
+                <div class="dataa">
+                    
+                    <select required name="SchoolGroub" id="SchoolGroub">
+                        <option value="">اختر</option>
+                        <option value="مستقلة">مستقلة</option>
+                        <option value="مشتركة">مشتركة</option>
+                    </select>
+                    <div>
+                        <label for="SchoolNameGroup">اسم المدرسة المشتركة</label>
+                        <input required id="SchoolNameGroup" type="text">
+                    </div>
+                
+                </div>
+            </div>
+            <div class="lastdata">
+                <div class="data">
+                    <label for="TotalStudent">اجمالي عدد الطلاب</label>
+                    <input required id="TotalStudent" type="number">
+                </div>
+                <div class="data">
+                    <label for="TotalRooms">اجمالي عدد الغرف في المبني</label>
+                    <input required id="TotalRooms" type="number">
+                </div>
+                <div class="data">
+                    <label for="TotalResources">عدد مصادر التعلم</label>
+                    <input required id="TotalResources" type="number">
+                </div>
+            
+                <div class="data">
+                    <label for="TotalClasses">عدد الفصول التعليمية</label>
+                    <input required id="TotalClasses" type="number">
+                </div>
+                <div class="data">
+                    <label for="Gems">الصالات الرياضية</label>
+                    <input required id="Gems" type="number">
+                </div>
+                <div class="data">
+                    <label for="TotalLab">عدد المختبرات</label>
+                    <input required id="TotalLab" type="number">
+                </div>
+                <div class="data">
+                    <label for="TotalLabCs">عدد معامل الحاسب</label>
+                    <input required id="TotalLabCs" type="number">
+                </div>
+                <div class="data">
+                    <label for="RoomsForMange">عدد الغرف المخصصة للمكاتب الادارية</label>
+                    <input required id="RoomsForMange" type="number">
+                </div>
+            </div>
+            <div class="education">
+                <h4>المرحلة التعليمية</h4>
+                <div class="edu-container">
+                    <div class="top">
+                        <div>
+                            <input required id="kg" type="checkbox">
+                            <label for="kg">رياض أطفال</label>
+                        </div>
+                        <div>
+                            <input required id="primary"  type="checkbox">
+                            <label for="primary">ابتدائي</label>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <input required id="mid"  type="checkbox">
+                            <label for="mid">متوسطة</label>
+                        </div>
+                        <div>
+                            <input required id="secondary"  type="checkbox">
+                            <label for="secondary">ثانوي</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="studnets">
+                <div class="top" >
+                    <h4>عدد الفصول للمرحلة التعليمية</h4>
+                    <div class="count-container">
+                        <div>
+                            <p>رياض أطفال م2</p>
+                            <input required min="0" type="number" name="" id="ClassesKG2">
+                        </div>
+                        <div>
+                            <p>رياض أطفال م3</p>
+                            <input required min="0" type="number" name="" id="ClassesKG3">
+                        </div>
+                        <div>
+                            <p>أول ابتدائي</p>
+                            <input required min="0" type="number" name="" id="ClassesOnePrimary">
+                        </div>
+                        <div>
+                            <p>ثاني ابتدائي</p>
+                            <input required min="0" type="number" name="" id="ClassesSecPrimary">
+                        </div>
+                        <div>
+                            <p>ثالث ابتدائي</p>
+                            <input required min="0" type="number" name="" id="ClassesThPrimary">
+                        </div>
+                        <div>
+                            <p>رابع ابتدائي</p>
+                            <input required min="0" type="number" name="" id="ClassesFourPrimary">
+                        </div>
+                        <div>
+                            <p>خامس ابتدائي</p>
+                            <input required min="0" type="number" name="" id="ClassesFivePrimary">
+                        </div>
+                        <div>
+                            <p>سادس ابتدائي</p>
+                            <input required type="number" name="" id="ClassesSixPrimary">
+                        </div>
+                        <div>
+                            <p>أول متوسطة</p>
+                            <input required min="0" type="number" name="" id="ClassesOneMid">
+                        </div>
+                        <div>
+                            <p>ثاني متوسطة</p>
+                            <input required min="0" type="number" name="" id="ClassesSecMid">
+                        </div>
+                        <div>
+                            <p>ثالث متوسطة</p>
+                            <input required min="0" type="number" name="" id="ClassesThMid">
+                        </div>
+                        <div>
+                            <p>أول ثانوي</p>
+                            <input required min="0" type="number" name="" id="ClassesOneSecondary">
+                        </div>
+                        <div>
+                            <p>ثاني ثانوي</p>
+                            <input required min="0" type="number" name="" id="ClassesSecSecondary">
+                        </div>
+                        <div>
+                            <p>ثالث ثانوي</p>
+                            <input required min="0" type="number" name="" id="ClassesThSecondary">
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <h4>عدد الطلاب للمرحلة التعليمية</h4>
+                    <div class="count-container">
+                        <div>
+                            <p>رياض أطفال م2</p>
+                            <input required min="0" type="number" name="" id="StudentsKG2">
+                        </div>
+                        <div>
+                            <p>رياض أطفال م3</p>
+                            <input required min="0" type="number" name="" id="StudentsKG3">
+                        </div>
+                        <div>
+                            <p>أول ابتدائي</p>
+                            <input required min="0" type="number" name="" id="StuentsOnePrimary">
+                        </div>
+                        <div>
+                            <p>ثاني ابتدائي</p>
+                            <input required min="0" type="number" name="" id="StuentsSecPrimary">
+                        </div>
+                        <div>
+                            <p>ثالث ابتدائي</p>
+                            <input required min="0" type="number" name="" id="StuentsThPrimary">
+                        </div>
+                        <div>
+                            <p>رابع ابتدائي</p>
+                            <input required min="0" type="number" name="" id="StuentsFourPrimary">
+                        </div>
+                        <div>
+                            <p>خامس ابتدائي</p>
+                            <input required min="0" type="number" name="" id="StuentsFivePrimary">
+                        </div>
+                        <div>
+                            <p>سادس ابتدائي</p>
+                            <input required type="number" name="" id="StuentsSixPrimary">
+                        </div>
+                        <div>
+                            <p>أول متوسطة</p>
+                            <input required min="0" type="number" name="" id="StudentsOneMid">
+                        </div>
+                        <div>
+                            <p>ثاني متوسطة</p>
+                            <input required min="0" type="number" name="" id="StudentsSecMid">
+                        </div>
+                        <div>
+                            <p>ثالث متوسطة</p>
+                            <input required min="0" type="number" name="" id="StudentsThMid">
+                        </div>
+                        <div>
+                            <p>أول ثانوي</p>
+                            <input required min="0" type="number" name="" id="StudentsOneSecondary">
+                        </div>
+                        <div>
+                            <p>ثاني ثانوي</p>
+                            <input required min="0" type="number" name="" id="StudentsSecSecondary">
+                        </div>
+                        <div>
+                            <p>ثالث ثانوي</p>
+                            <input required min="0" type="number" name="" id="StudentsThSecondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lastdata">
+                <div class="data">
+                    <label for="TotalEmps">اجمالي عدد موظفيين الجهة</label>
+                    <input required id="TotalEmps" type="number">
+                </div>
+                <div class="data">
+                    <label for="TotalTeachers">عدد المعلمين/ت</label>
+                    <input required id="TotalTeachers" type="number">
+                </div>
+                <div class="data">
+                    <label for="ManagerEducation">عدد الجهاز الادراي علي سلم الوظائف التعليمية</label>
+                    <input required id="ManagerEducation" type="number">
+                </div>
+                <div class="data">
+                    <label for="ManagerCity">عدد الجهاز الادراي علي سلم الوظائف  المدنية</label>
+                    <input required id="ManagerCity" type="number">
+                </div>
+                <div class="data">
+                    <label for="ManagerUsers">عدد الجهاز علي بند المستخدمين-الاجر اليومي-الشركات الأمنية</label>
+                    <input required id="ManagerUsers" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button type="submit" id="btnSaveScool">حفظ</button>
+            <button>رجوع</button>
+        </div>
+    </form>   
+  
+    <script src="school.js"></script>
+</body>
+</html>

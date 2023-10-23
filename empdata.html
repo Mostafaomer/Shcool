@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainifo.css">
+    <title>بيانات الموظفيين الاداريين</title>
+</head>
+<body>
+    <header></header>
+    <div class="alert "></div>
+    <h2>بيانات الموظفيين الاداريين</h2>
+    <div class="container">
+        <form id="saveEmpForm">
+            <div class="main">
+                <div class="data special">
+                    <label for="EmployeeName">اسم الموظف</label>
+                    <input id="EmployeeName" name="EmployeeName" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="EmpolyeeTitle">المسمي الوظيفي</label>
+                    <input name="EmpolyeeTitle" id="EmpolyeeTitle" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="BirthDay">تاريخ الميلاد</label>
+                    <input name="BirthDay" id="BirthDay" required type="date">
+                </div>
+                <div class="data special">
+                    <label for="Phone">رقم الاتصال</label>
+                    <div>
+                        <input name="Phone" id="Phone" required type="text">
+                        <p for=""></p>
+                    </div>
+                </div>
+                <div class="data special">
+                    <label for="Rank">المرتبة</label>
+                    <input name="Rank" id="Rank" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="LastQualification">اخر مؤهل دراسي</label>
+                    <input name="LastQualification" id="LastQualification" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Grade">التقدير</label>
+                    <input name="Grade" id="Grade" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Residence">مقر السكن</label>
+                    <input name="Residence" id="Residence" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="EmployeeIdcard">رقم الهوية الوطنية</label>
+                    <div>
+                        <input name="EmployeeIdcard" id="EmployeeIdcard" required type="text">
+                        <p></p>
+                    </div>    
+                </div>
+                <div class="data special">
+                    <label for="Work">العمل المكلف به</label>
+                    <input name="Work" id="Work" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="CommencementDate">تاريخ المباشرة</label>
+                    <input name="CommencementDate" id="CommencementDate" required type="date">
+                </div>
+                <div class="data special">
+                    <label for="Daraga">الدرجة</label>
+                    <input name="Daraga" id="Daraga" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Fares">مسند في برنامج فارس</label>
+                    <input name="Fares"  required id="Fares" type="checkbox">
+                </div>
+            </div>
+            <div class="controls">
+                <button type="submit" id="saveEmp" type="submit">حفظ</button>
+                <button type="submit"  >رجوع</button>
+            </div>
+    </form>
+    </div>
+    <script src="employee.js"></script>
+</body>
+</html>
