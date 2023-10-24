@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+  
+    height: 100vh;
+    background-color: #eee;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+
+}
+header {
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+.login-container {
+    text-align: center;
+    font-size: 1.4rem;
+
+    max-width: 500px;
+    padding: 20px 19px;
+    border-radius: 15px;
+    letter-spacing: 1.3px;
+    opacity: .8;
+}
+.login-container p {
+    margin-bottom: 10px;
+}
+.login-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.login-container input {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    direction: rtl;
+    background-color: #eee;
+}
+.login-container button {
+    
+    background-color: transparent;
+    padding: 10px 25px;
+    border-radius:  5px;
+    border: 1px solid;
+    transition: .3s;
+    
+}
+.login-container button:hover {
+
+    background-color: #16BECF;
+    color: #fff;
+}
+.home-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 0 15px;
+    align-items: center;
+    letter-spacing: 1.2px;
+    border-radius: 20px;
+    max-width: 800px;
+    min-height: 300px;
+}
+.home-container a {
+    display: inline-block;
+    transition: .3s;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+.home-container a:hover {
+    text-decoration: underline;
+    background-color:#16BECF;
+    color: #fff;
+}
+.home-container p {
+    line-height: 2;
+}

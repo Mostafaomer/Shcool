@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mainifo.css">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <title>بيانات الموظفيين الاداريين</title>
+</head>
+<body>
+    <header></header>
+    <h2>بيانات الموظفيين الاداريين</h2>
+    <div class="alert "></div>
+    <div class="container">
+        <form id="saveEmpForm">
+            <div class="main">
+                <div class="data special">
+                    <label for="EmployeeName">اسم الموظف</label>
+                    <input id="EmployeeName" name="EmployeeName" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="EmpolyeeTitle">المسمي الوظيفي</label>
+                    <input name="EmpolyeeTitle" id="EmpolyeeTitle" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="BirthDay">تاريخ الميلاد</label>
+                    <div class="input-group">
+                        <input id="BirthDay" type="text" class="hijri-date-input" />
+                    </div>
+                </div>
+                <div class="data special">
+                    <label for="Phone">رقم الاتصال</label>
+                    <div>
+                        <input name="Phone" id="Phone" required type="text">
+                        <p for=""></p>
+                    </div>
+                </div>
+                <div class="data special">
+                    <label for="Rank">المرتبة</label>
+                    <input name="Rank" id="Rank" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="LastQualification">اخر مؤهل دراسي</label>
+                    <input name="LastQualification" id="LastQualification" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Grade">التقدير</label>
+                    <input name="Grade" id="Grade" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Residence">مقر السكن</label>
+                    <input name="Residence" id="Residence" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="EmployeeIdcard">رقم الهوية الوطنية</label>
+                    <div>
+                        <input name="EmployeeIdcard" id="EmployeeIdcard" required type="text">
+                        <p></p>
+                    </div>    
+                </div>
+                <div class="data special">
+                    <label for="Work">العمل المكلف به</label>
+                    <input name="Work" id="Work" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="CommencementDate">تاريخ المباشرة</label>
+                    <div class="input-group">
+                        <input id="CommencementDate" type="text" class="hijri-date-input" />
+                    </div>
+                </div>
+                <div class="data special">
+                    <label for="Daraga">الدرجة</label>
+                    <input name="Daraga" id="Daraga" required type="text">
+                </div>
+                <div class="data special">
+                    <label for="Fares">مسند في برنامج فارس</label>
+                    <input name="Fares"  id="Fares" type="checkbox">
+                </div>
+            </div>
+            <div class="controls">
+                <button type="submit" id="saveEmp" type="submit">حفظ</button>
+                <a href="Home.html">رجوع</a>
+            </div>
+    </form>
+    </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/momentjs.js"></script>
+    <script src="../js/moment-with-locales.js"></script>
+    <script src="../js/moment-hijri.js"></script>
+    <script src="../js/bootstrap-hijri-datetimepicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            initHijrDatePicker();
+
+
+            $('.disable-date').hijriDatePicker({
+
+                minDate:"2020-01-01",
+                maxDate:"2021-01-01",
+                viewMode:"years",
+                hijri:true,
+                debug:true
+            });
+
+        });
+
+        function initHijrDatePicker() {
+
+            $(".hijri-date-input").hijriDatePicker({
+                locale: "ar-sa",
+                format: "YYYY-MM-DD",
+                hijriFormat:"iYYYY-iMM-iDD",
+                dayViewHeaderFormat: "MMMM YYYY",
+                hijriDayViewHeaderFormat: "iMMMM iYYYY",
+                showSwitcher: true,
+                allowInputToggle: true,
+                showTodayButton: false,
+                useCurrent: true,
+                isRTL: false,
+                viewMode:'months',
+                keepOpen: false,
+                hijri: false,
+                debug: true,
+                showClear: true,
+                showTodayButton: true,
+                showClose: true
+            });
+        }
+
+        function initHijrDatePickerDefault() {
+
+            $(".hijri-date-input").hijriDatePicker();
+        }
+
+
+    </script>
+    <script src="../js/employee.js"></script>
+</body>
+</html>
