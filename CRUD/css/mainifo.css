@@ -278,7 +278,7 @@ select {
     gap: 2rem;
     flex-wrap: wrap;
 }
-.lastdata input{
+.lastdata input[type="text"]{
     border-width: 1px;
 }
 @media (max-width:400px) {
