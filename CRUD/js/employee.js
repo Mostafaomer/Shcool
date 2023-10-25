@@ -86,7 +86,7 @@ function checkLength(input) {
     return input.value.length==10 ? true:false;
 }
 
-phone.addEventListener('keydown' ,(e) => {
+phone.addEventListener('keypress' ,(e) => {
   document.querySelector("input[id='Phone']+p").innerHTML=""
   if((isNaN(parseInt( e.key))||e.target.value.length==10)&&e.key!="Backspace"&&e.key!="Tab")
       e.preventDefault();
