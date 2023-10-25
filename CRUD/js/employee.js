@@ -93,7 +93,7 @@ phone.addEventListener('keydown' ,(e) => {
 
 })
 
-EmployeeIdcard.addEventListener('keydown' ,(e) => {
+EmployeeIdcard.addEventListener('keypress' ,(e) => {
   document.querySelector("input[id='EmployeeIdcard']+p").innerHTML=""
   if((isNaN(parseInt( e.key))||e.target.value.length==10)&&e.key!="Backspace"&&e.key!="Tab")
       e.preventDefault();
